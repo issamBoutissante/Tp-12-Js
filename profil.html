@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+  </head>
+  <style></style>
+  <body>
+    <form
+      style="border: 1px solid black; padding: 10px; width: 500px; margin: auto"
+    >
+      <h1>Infos de profil</h1>
+      <hr />
+      <input type="radio" checked name="sexe" value="Homme" />Homme
+      <input type="radio" name="sexe" value="Femme" />Femme<br /><br />
+      <input type="checkbox" name="" id="isSoc" />
+      <label style="margin-right: 30px">Oui, je suis une societe</label>
+      <label> Nom societe :</label>
+      <input type="text" id="nomSoc" /><br /><br />
+      <label>Titre Profil* :</label>
+      <input
+        size="60"
+        type="text"
+        placeholder="Exe:Developpeur senior en JavaScript"
+        required
+        class="required"
+        id="titrePro"
+      />
+      <br /><br />
+      <label>Pays/Ville*:</label>
+      <select id="pays">
+        <option>-Veuillez choisir-</option>
+        <option>Maroc</option>
+        <option>canada</option>
+        <option>USA</option>
+      </select>
+      <label>Telephone* :</label>
+      <input
+        class="required"
+        type="text"
+        placeholder="Votre numero de telephone ici"
+        required
+        id="tel"
+      />
+      <br /><br />
+      disponibilite* :
+      <input type="checkbox" id="isDis" />
+      A distance uniquement
+      <br /><br />
+      Tarife* :<input
+        class="required"
+        style="margin: 0 5px"
+        type="text"
+        required
+        placeholder="Ex:400"
+        id="tarife"
+      />DH/Jour <br />
+      <br />
+      Competences maitrisees*: <br />
+      <select id="comp">
+        <option>JavaScript/MySql</option>
+        <option>C#</option>
+        <option>Java</option>
+        <option>python</option>
+      </select>
+      <select id="level">
+        <option>senior</option>
+        <option>debutant</option>
+        <option>expert</option>
+      </select>
+      <input type="button" value="Ajouter" id="ajouter" />
+      <br /><br />
+      Liste de vos Competences*:
+      <br />
+      <textarea class="required" id="compArea" cols="30" rows="5"></textarea>
+      <br />
+      <input type="submit" value="Valider" id="valider" />
+    </form>
+  </body>
+  <script src="./profil.js"></script>
+</html>
