@@ -16,8 +16,6 @@ ajouterBtn.onclick = () => {
 };
 validerBtn.onclick = () => {
   var inputs = document.querySelectorAll(".required");
-  console.log(inputs);
-  console.log(document.getElementsByClassName(".required"));
   for (var i = 0; i < inputs.length; i++) {
     if (inputs[i].value == "") {
       return;
